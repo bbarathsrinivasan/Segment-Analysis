@@ -1,0 +1,72 @@
+================================================================================
+DAY CALCULATION TEST OUTPUT
+================================================================================
+
+Market: will-andrew-cuomos-vote-share-be-45-or-higher-in-the-first-round-of-the-nyc-democratic-mayoral-primary-223_trades
+  Event: andrew-cuomo-1st-round-of-vote-in-nyc-dem-mayoral-primary
+  Date range: 2025-06-23 to 2025-07-01 (6 unique days)
+  Day distribution:
+    Day 3: 2 trades
+    Day 4: 1 trades
+    Day 8: 1 trades
+    Day 9: 13 trades
+    Day 10: 10 trades
+    Day 11: 2 trades
+
+Market: will-andrew-cuomos-vote-share-be-between-40-and-45-in-the-first-round-of-the-nyc-democratic-mayoral-primary-319_trades
+  Event: andrew-cuomo-1st-round-of-vote-in-nyc-dem-mayoral-primary
+  Date range: 2025-06-22 to 2025-07-19 (7 unique days)
+  Day distribution:
+    Day 1: 1 trades
+    Day 2: 6 trades
+    Day 3: 1 trades
+    Day 8: 10 trades
+    Day 9: 2 trades
+    Day 22: 1 trades
+    Day 28: 1 trades
+
+Market: will-andrew-cuomos-vote-share-be-between-35-and-40-in-the-first-round-of-the-nyc-democratic-mayoral-primary-819_trades
+  Event: andrew-cuomo-1st-round-of-vote-in-nyc-dem-mayoral-primary
+  Date range: 2025-06-23 to 2025-07-21 (15 unique days)
+  Day distribution:
+    Day 2: 5 trades
+    Day 4: 2 trades
+    Day 8: 4 trades
+    Day 9: 5 trades
+    Day 10: 3 trades
+    Day 13: 8 trades
+    Day 15: 5 trades
+    Day 17: 3 trades
+    Day 18: 5 trades
+    Day 19: 5 trades
+    ... (5 more days)
+
+Market: will-andrew-cuomos-vote-share-be-less-than-35-in-the-first-round-of-the-nyc-democratic-mayoral-primary-721_trades
+  Event: andrew-cuomo-1st-round-of-vote-in-nyc-dem-mayoral-primary
+  Date range: 2025-06-23 to 2025-07-20 (7 unique days)
+  Day distribution:
+    Day 2: 2 trades
+    Day 3: 1 trades
+    Day 4: 1 trades
+    Day 13: 78 trades
+    Day 18: 1 trades
+    Day 28: 14 trades
+    Day 29: 17 trades
+
+Market: will-gallego-win-arizona-senate-election-by-1-2_trades
+  Event: arizona-senate-election-margin-of-victory
+  Date range: 2024-11-08 to 2024-11-26 (19 unique days)
+  Day distribution:
+    Day 1: 3 trades
+    Day 2: 55 trades
+    Day 3: 119 trades
+    Day 4: 37 trades
+    Day 5: 59 trades
+    Day 6: 36 trades
+    Day 7: 7 trades
+    Day 8: 21 trades
+    Day 9: 6 trades
+    Day 10: 22 trades
+    ... (9 more days)
+
+================================================================================

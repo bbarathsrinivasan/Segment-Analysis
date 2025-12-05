@@ -1,0 +1,98 @@
+================================================================================
+ANALYSIS SUMMARY: Negative Probabilities and User Position Constraints
+================================================================================
+
+ANALYSIS 1: Negative p_segment_t Statistics
+================================================================================
+
+Total daily panel files analyzed: 183
+Total rows across all panels: 8,801
+
+Key Findings:
+- Rows with negative p_segment_t: 3,310 (37.61%)
+- Rows with NaN p_segment_t: 1,553 (17.65%)
+- Rows with zero/negative denominator (H_Y + H_N <= 0): 1,553 (17.65%)
+
+Breakdown:
+- Markets with at least one negative p_segment_t: 83 out of all markets
+- Negative p_segment_t by segment:
+  * Small: 31 markets
+  * Medium: 22 markets
+  * Large: 19 markets
+  * Whale: 11 markets
+
+Interpretation:
+- Negative p_segment_t occurs when H_Y_jt < 0 (more YES sells than buys) 
+  and the denominator (H_Y_jt + H_N_jt) is still positive
+- NaN occurs when H_Y_jt + H_N_jt <= 0 (net position is zero or negative)
+- This happens in 37.61% of all daily panel rows, indicating that segments
+  frequently have net negative positions (more selling than buying)
+
+================================================================================
+ANALYSIS 2: User Position Analysis (Can users sell more than they buy?)
+================================================================================
+
+Total markets analyzed: 48 (first 10 events)
+Total unique users: 7,403
+
+Key Findings:
+- Users with excess sells (sells > buys): 1,493 (20.17%)
+- Markets with at least one user having excess sells: 47 out of 48
+- Total excess sell volume: 38,265,155.05 units
+
+Notable Patterns:
+- Many users have 0 buys but positive sells (see examples below)
+- Some users have buys but still sell more than they bought
+- This suggests:
+  1. Users may acquire positions through other means (transfers, initial 
+     allocations, airdrops, etc.)
+  2. The trade data may be incomplete (missing some buy transactions)
+  3. Users may be selling positions acquired outside the recorded trade data
+
+Example Cases:
+1. User 0x3dddaa07eebb30dbc777cfab052cc0f9bac8722d
+   - Market: will-andrew-cuomos-vote-share-be-between-35-and-40...
+   - Total Buys: 0.00
+   - Total Sells: 20.00
+   - Excess: 20.00
+
+2. User 0x58caa2f2787c73901336ce36282a7b28c1a6cc33
+   - Market: will-andrew-cuomos-vote-share-be-between-35-and-40...
+   - Total Buys: 0.00
+   - Total Sells: 90.00
+   - Excess: 90.00
+
+3. User 0xe3726a1b9c6ba2f06585d1c9e01d00afaedaeb38
+   - Market: will-andrew-cuomos-vote-share-be-between-35-and-40...
+   - Total Buys: 0.00
+   - Total Sells: 200.46
+   - Excess: 200.46
+
+4. User 0x80da08b50ec85bf1f575725091928fff064b4f6d
+   - Market: will-andrew-cuomos-vote-share-be-between-40-and-45...
+   - Total Buys: 50.00
+   - Total Sells: 127.77
+   - Excess: 77.77
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+1. Negative p_segment_t:
+   - Current approach allows negative values (as requested)
+   - 37.61% of rows have negative values, which is significant
+   - Consider segmenting by users (high-value vs low-value users) rather than
+     by trades, as this may provide more stable probability estimates
+
+2. User Position Constraints:
+   - 20.17% of users have sold more than they bought in the trade data
+   - This suggests the trade data may not capture all position acquisition
+     methods (transfers, initial allocations, etc.)
+   - When implementing user-based segmentation, consider:
+     * Including transfer/initial allocation data if available
+     * Using net position (buys - sells) rather than just buys to determine
+       user value segments
+     * Accounting for positions acquired outside recorded trades
+
+================================================================================
+

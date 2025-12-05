@@ -1,0 +1,15 @@
+raw/
+.venv/
+.github/
+output/andrew-cuomo-1st-round-of-vote-in-nyc-dem-mayoral-primary
+output/australia-election-seat-of-bennelong
+output/australia-election-seat-of-brisbane
+output/brad-lander-1st-round-of-vote-in-nyc-dem-mayoral-primary
+output/cameroon-presidential-election
+output/delaware-senate-election-winner
+output/arizona-senate-election-margin-of-victory/will-gallego-win-arizona-senate-election-by-1-2_trades
+output/arizona-senate-election-margin-of-victory/will-gallego-win-arizona-senate-election-by-2-3-or-more_trades
+output/arizona-senate-election-margin-of-victory/will-gallego-win-arizona-senate-election-by-3-or-more_trades
+output/arizona-senate-election-margin-of-victory/will-kari-lake-win-arizona-senate-election-by-0-1_trades
+output/arizona-senate-election-margin-of-victory/will-kari-lake-win-arizona-senate-election-by-1-2_trades
+output/arizona-senate-election-margin-of-victory/will-kari-lake-win-arizona-senate-election-by-2-or-more_trades
