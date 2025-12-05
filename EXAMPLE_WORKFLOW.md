@@ -229,7 +229,11 @@ day,p_whale,p_large,p_medium,p_small,p_market
 ## 📊 Visual Result
 
 ![Segment Probabilities Plot](output/arizona-senate-election-margin-of-victory/will-gallego-win-arizona-senate-election-by-0-1_trades/plots/will-gallego-win-arizona-senate-election-by-0-1_trades_probabilities.png)
-
+<a href="output/arizona-senate-election-margin-of-victory/will-gallego-win-arizona-senate-election-by-0-1_trades/plots/will-gallego-win-arizona-senate-election-by-0-1_trades_probabilities.html" target="_blank">
+  <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+    📊 View Interactive Plot
+  </button>
+</a>
 **Interpretation:**
 - 🐋 **Whale** (blue): Strong net YES position, peaks around day 4
 - 🔶 **Large** (orange): Moderate net YES position, declining over time
